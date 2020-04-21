@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--suppress ALL-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="base64">
+    <title>登录(Login)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="../static/asserts/css/reset.css">
+    <link rel="stylesheet" href="../static/asserts/css/supersized.css">
+    <link rel="stylesheet" href="../static/asserts/css/style.css">
+    <script type="text/javascript" src="../static/asserts/js/html5.js"></script>
+    <script type="text/javascript" src="../static/asserts/js/jquery-1.8.2.min.js" ></script>
+    <script type="text/javascript" src="../static/asserts/js/supersized.3.2.7.min.js" ></script>
+    <script type="text/javascript" src="../static/asserts/js/supersized-init.js" ></script>
+    <script type="text/javascript" src="../static/asserts/js/scripts.js" ></script>
+
+
+</head>
+
+<body>
+
+<div class="page-container">
+    <h1>登录(Login)</h1>
+    <form action="/user/login"  method="post">
+        <input type="text" name="name" class="username" id="username" placeholder="请输入您的用户名！">
+        <input type="password" name="password" class="password" id="password" placeholder="请输入您的用户密码！">
+        <p style="color: red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+        <button type="submit" class="submit_button" >登录</button>
+        <a href="/user/register" ><button type="button" class="submit_login,login">注册</button></a>
+    </form>
+
+</div>
+
+<!-- Javascript -->
+
+</body>
+<div style="text-align:center;">
+
+</div>
+</html>

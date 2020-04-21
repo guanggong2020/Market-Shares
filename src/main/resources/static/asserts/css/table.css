@@ -1,0 +1,7 @@
+
+.th-inner{
+    color:black;
+}
+#exampleTable td{
+    overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+}
